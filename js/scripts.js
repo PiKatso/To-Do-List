@@ -33,6 +33,9 @@ $(document).ready(function(){
     return userTaskArray = [];
   });
 
+  $(".chore-output *").click(function() {
+    $(this).toggleClass("done");
+  });
 
 
 });
