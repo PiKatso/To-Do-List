@@ -6,7 +6,10 @@
 
   var createList = function(array) {
     array.forEach(function(item){
-      $(".chore-output ul").append(`<li>${item}</li>`);
+      $(".chore-output ul").append(`<li class="listed-task">${item}</li>`);
+      $(".chore-output ul li").last().click(function() {
+          $(this).toggleClass("done");
+      });
     });
   };
 
@@ -17,6 +20,7 @@ $(document).ready(function(){
   $("button[name=task-items]").click(function() {
     var userChoreItem = $("input[name=task]").val();
     $(".task-output").append(`<li>${userChoreItem}</li>`);
+
     return userTaskArray.push(userChoreItem);
   });
 
@@ -37,9 +41,7 @@ $(document).ready(function(){
     $(".chore-output").toggleClass("done");
   });
 
-  $("li").click(function() {
-    $("li").toggleClass("done");
-  });
+
 
 
 });
