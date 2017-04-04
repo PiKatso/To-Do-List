@@ -14,27 +14,26 @@
       <div class="jumbotron">
         <h1>To Do List</h1>
       </div>
-      <form class="list">
+      <form id="list">
         <div class="input">
-          <label for="chore-name">Enter a name for your chore:</label>
-          <input type="text" name="chore-name" value="">
+          <label for="chore-name"></label>
+          <input type="text" name="chore-name" value="" placeholder="Enter a chore here">
           <br>
-          <label for="task">Add Task:</label>
-          <input type="text" name="task" value="">
-          <button type="button" name="task-items">Add</button>
+          <label for="task"></label>
+          <input type="text" name="task" value="" placeholder="Enter a task here">
+          <br>
+          <button type="button" name="task-items">Add my task!</button>
         </div>
         <div class="task-output">
-          <ol>
-
-          </ol>
+          <ol> </ol>
         </div>
         <button type="submit" name="submit">Submit</button>
       </form>
-      <div class="chore-output">
-        <h3></h3>
-        <ul>
+      <br>
+      <div class="container">
+        <div id="chore-output">
 
-        </ul>
+        </div>
       </div>
     </div>
   </body>

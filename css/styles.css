@@ -5,3 +5,21 @@
 .done {
   text-decoration: line-through;
 }
+
+.jumbotron {
+  text-align: center;
+}
+
+#list {
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  width: 50%;
+}
+
+.chore-output {
+  width: 33%;
+  float: left;
+}
